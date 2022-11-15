@@ -1,0 +1,1 @@
+{"mappings":"YAAA,IAAMA,EAAaC,SAASC,cAAc,gBAC1CC,QAAQC,IAAIJ,E","sources":["src/index.js"],"sourcesContent":["const formSearch = document.querySelector('#search-form')\nconsole.log(formSearch)\n\n\n"],"names":["$b8f9b7833fa37166$var$formSearch","document","querySelector","console","log"],"version":3,"file":"index.0c8fdc8e.js.map"}
