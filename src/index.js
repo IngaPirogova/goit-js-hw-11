@@ -25,7 +25,6 @@ let searchQuery = '';
     clearGallery();  
 }
 
-
 async function appendImgMarkup() {
   try {
     const resp = await fetchImages(searchQuery, page);          
@@ -39,13 +38,11 @@ async function appendImgMarkup() {
         'Sorry, there are no images matching your search query. Please try again.'
       );  
       return;
-    } 
-        
+    }         
   } catch (error) {
     console.log(error);
   }  
 } 
-
 function renderMarkup(hits) {
         return hits
       .map(

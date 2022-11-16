@@ -1,6 +1,6 @@
 import axios from "axios";
 
-//ф-ция поиска и ретурн результата поиска
+
 export async function fetchImages(searchQuery, page) {
 
 const KEY_API = '31233349-657dbeb08b09bae80b555b3c4';
