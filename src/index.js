@@ -11,7 +11,7 @@ let searchQuery = '';
 
  formSearch.addEventListener('submit', onSearchForm);
 
- async function onSearchForm(e) {
+ function onSearchForm(e) {
     e.preventDefault();    
     const searchQuery = e.currentTarget.elements.searchQuery.value;   
     console.log(searchQuery)        
