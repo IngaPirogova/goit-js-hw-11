@@ -21,7 +21,8 @@ let searchQuery = '';
     currentPage = 1;
          
     renderMarkup()
-    appendImgMarkup()    
+    appendImgMarkup()  
+    clearGallery();  
 }
 
 async function appendImgMarkup() {
@@ -86,6 +87,9 @@ function renderMarkup(hits) {
       .join('');          
   }
   
+  function clearGallery() {
+    gallery.innerHTML = '';
+  }
     
  
 
