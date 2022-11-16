@@ -25,6 +25,7 @@ let searchQuery = '';
     clearGallery();  
 }
 
+
 async function appendImgMarkup() {
   try {
     const resp = await fetchImages(searchQuery, page);          
