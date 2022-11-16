@@ -6,7 +6,7 @@ const gallery = document.querySelector('.gallery')
 const loadMoreBtn = document.querySelector('.load-more')
 formSearch.addEventListener('submit', onSearchForm);
 
-let currentPage = 1;
+let page = 1;
 let currentHits = 0;
 let searchQuery = '';
 
@@ -56,10 +56,10 @@ function renderMarkup(hits) {
 async function onSearchForm(e) {
   e.preventDefault();
   const searchQuery = e.currentTarget.elements.searchQuery.value;
-    if (!searchQuery) {
+      if (!searchQuery) {
          return;
     } 
-    
+   
   const response = await fetchImages(searchQuery, page);
   currentHits = response.hits.length;  
 
