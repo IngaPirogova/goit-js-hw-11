@@ -1,4 +1,3 @@
-import axios from "axios"
 import fetchImages from "./partials/js/fetch";
 import { Notify } from "notiflix";
 
