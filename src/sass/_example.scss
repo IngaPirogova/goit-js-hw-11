@@ -33,14 +33,12 @@ img {
 	display: block;
 }
 
-
 body {
   font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   line-height: 1.5;
   color: #2a2a2a;
 }
-
  
 .container {
   display: flex;
@@ -79,7 +77,6 @@ body {
   border-radius: 4px;
   border-style: none;
   color: #272b45;
-
 }
 
 .gallery {
@@ -87,8 +84,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  margin-top: 50px;
-  
+  margin-top: 50px;  
 }
 
 .photo-card {
@@ -114,7 +110,6 @@ body {
   transition-duration: 1000ms;
 }
 
-
 .btn-wriper {
   display: flex;
   justify-content: center;
@@ -123,13 +118,13 @@ body {
 .load-more {
   margin-bottom: 20px;
   margin-top: 20px;
-   margin-left: auto;
-   margin-right: auto;
-   background-color: #6ecce1;
-   border-color: #6ecce1;
-   border-radius: 4px;
-   color: #272b45;
-  transition-duration: 500ms;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #6ecce1;
+  border-color: #6ecce1;
+  border-radius: 4px;
+  color: #272b45;
+  transition-duration: 800ms;
 }
 
 .load-more:hover {
@@ -138,7 +133,7 @@ body {
   background-color: rgba(255, 255, 255, 0.66);
   color: #0a143578;
   font-weight: 600;
-  transition-duration: 500ms;
+  transition-duration: 800ms;
 }
 
 .is-hidden {
