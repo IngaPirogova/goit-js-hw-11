@@ -12,7 +12,7 @@ h6,
 p,
 ul {
 	margin: 0;
-	padding-left: 0;
+	padding: 0;
 }
 
 ul {
@@ -31,6 +31,7 @@ button {
 
 img {
 	display: block;
+  max-width: 100%;
 }
 
 body {
@@ -46,6 +47,8 @@ body {
   align-items: center;
 }
 
+
+
 .search-form {
   display: flex;
   justify-content: center;
@@ -54,7 +57,9 @@ body {
   background: linear-gradient(to right, #4f1e51, #ee8e65);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
   position: fixed;
-  width: 100vw;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .input__wrap {
@@ -123,12 +128,20 @@ body {
   gap: 30px;
   margin-top: 90px;  
   padding: 10px;
+
+  
 }
 
-.photo-card {
-  // margin: 10px;
-  width: 300px;
+.photo-card {  
+  flex-basis: calc((100% - 3 * 30px) / 4);
+  height: 100%;
+
+  
+   
+    // flex-basis: calc((100% - 20px * (4 - 1)) / 4);
+    
 }
+
 
 .info-item {
   display: block;
@@ -137,23 +150,31 @@ body {
   color: #4f1e51;
   font-size: 14px;
   font-weight: 500;
+
+  // flex-basis: calc((100% - var(--gap) * (var(--items) - 1)) / var(--items));
+  
 }
+
+  
 
 .info {
   justify-content: center;
   gap: 10px;
   display: flex;
   color: #4f1e51;  
+ 
+     flex-grow: 1;
 }
 
 .photo-card img {
-  height: 200px;
+  height: 300px;
   width: 100%;
   object-fit: cover;
   box-shadow: 0 2px 6px rgb(0 0 0 / 80%);
   margin-bottom: 10px;
   transition-duration: 1000ms;
-  display: flex;
+  display: flex;  
+  border-radius: 10px 10px 0 0;
 }
 
 .photo-card img:hover {
