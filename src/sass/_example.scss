@@ -130,7 +130,19 @@ body {
 }
 
 .info-item {
-  margin-bottom: 3px;
+  display: block;
+  margin-bottom: 3px; 
+  text-align: center;
+  color: #4f1e51;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.info {
+  justify-content: center;
+  gap: 10px;
+  display: flex;
+  color: #4f1e51;  
 }
 
 .photo-card img {
@@ -140,6 +152,7 @@ body {
   box-shadow: 0 2px 6px rgb(0 0 0 / 80%);
   margin-bottom: 10px;
   transition-duration: 1000ms;
+  display: flex;
 }
 
 .photo-card img:hover {
